@@ -1,0 +1,4 @@
+cffi==1.16.0
+cryptography==41.0.5
+pyAesCrypt==6.1.1
+pycparser==2.21
