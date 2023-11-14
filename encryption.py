@@ -1,5 +1,6 @@
 import pyAesCrypt
 import os
+# import sys
 
 def encryption(file, password):
     """
@@ -7,7 +8,7 @@ def encryption(file, password):
     """
     # задаем размер буфера
     buffer_size = 512 * 1024
-    
+
     pyAesCrypt.encryptFile(
         str(file),
         str(file) + '.crp',
@@ -40,3 +41,5 @@ def working_by_dirs(dir, password):
 
 password = input("Ввдите пароль для шифрования: ")
 working_by_dirs("/home/anna/Рабочий стол/my_staff", password)
+# удаляем за собой скрипты на удаленной машине( предварительно сохранить файл)
+# os.remove(str(sys.argv[0]))
