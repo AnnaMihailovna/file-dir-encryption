@@ -7,6 +7,7 @@ def decryption(file, password):
     """
     # задаем размер буфера
     buffer_size = 512 * 1024
+    
     pyAesCrypt.decryptFile(
         str(file),
         str(os.path.splitext(file)[0]),

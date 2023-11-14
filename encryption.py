@@ -7,6 +7,7 @@ def encryption(file, password):
     """
     # задаем размер буфера
     buffer_size = 512 * 1024
+    
     pyAesCrypt.encryptFile(
         str(file),
         str(file) + '.crp',
